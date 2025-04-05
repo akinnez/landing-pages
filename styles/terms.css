@@ -1,0 +1,27 @@
+main {
+	color: var(--primary-color);
+
+	.body-cont {
+		line-height: 2.5rem;
+		@media screen and (min-width: 1024px) {
+			padding: 3rem 5rem;
+		}
+	}
+	h4 {
+		font-size: 1.5rem;
+	}
+	.last {
+		margin-top: 3rem;
+		font-size: 18px;
+	}
+	ul {
+		padding: 0 1rem;
+		@media screen and (min-width: 1024px) {
+			padding: 0 3rem;
+		}
+
+		li {
+			list-style: disc;
+		}
+	}
+}

@@ -1,0 +1,55 @@
+:root {
+	--primary-color: #003366;
+	--text-color-100: hsl(49, 71%, 49%);
+	--text-color-200: #ececec;
+	--font-size-adjust: 100%;
+}
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	font-size: 16px;
+	box-sizing: border-box;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+		'Lucida Sans', Arial, sans-serif;
+	font-size-adjust: var(--font-size-adjust);
+	transition: all 200ms linear;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	scroll-snap-type: mandatory;
+	scroll-behavior: smooth;
+	scroll-snap-align: start;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: var(--font-size-adjust);
+}
+body {
+	background-color: var(--primary-color);
+}
+main.main {
+	background-color: white;
+}
+.body-cont {
+	text-align: justify;
+	padding: 10px;
+
+	@media screen and (min-width: 768px) {
+		padding: 0 3rem;
+	}
+	@media screen and (min-width: 1024px) {
+		padding: 0 5rem;
+	}
+}
+
+a {
+	color: var(--primary-color);
+}
+button {
+	padding: 12px 20px;
+	border-radius: 10px;
+	border: none;
+	background-color: var(--primary-color);
+	color: var(--text-color-100);
+	cursor: pointer;
+}

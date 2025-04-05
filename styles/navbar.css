@@ -1,0 +1,152 @@
+header {
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: sticky;
+	top: 0px;
+	z-index: 10;
+
+	@media screen and (min-width: 1024px) {
+		position: unset;
+		padding: 0 5rem;
+	}
+
+	i {
+		padding: 0 10px;
+		@media screen and (min-width: 1024px) {
+			padding: 0 0;
+			display: none;
+		}
+	}
+	.active-nav {
+		font-weight: 700;
+	}
+	nav.active {
+		left: 0;
+		display: block;
+	}
+	nav {
+		position: fixed;
+		width: 300px;
+		background-color: var(--primary-color);
+		z-index: 10px;
+		bottom: 0;
+		top: 0;
+		left: -300px;
+		transition: all 500ms linear;
+
+		@media screen and (min-width: 1024px) {
+			position: unset;
+			width: fit-content;
+			background-color: transparent;
+		}
+
+		.sidebar-top {
+			display: flex;
+			justify-content: space-between;
+			height: 100px;
+			padding: 0 10px;
+			align-items: center;
+			border-bottom: 1px solid var(--text-color-100);
+
+			@media screen and (min-width: 1024px) {
+				display: none;
+			}
+		}
+
+		ul {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 3rem;
+
+			@media screen and (min-width: 1024px) {
+				flex-direction: row;
+				gap: 0 1.5rem;
+				margin-top: 0;
+			}
+
+			a {
+				color: var(--text-color-100);
+				line-height: 30px;
+				padding: 1.35rem 0;
+				/* border: 1px solid red; */
+
+				@media screen and (min-width: 1024px) {
+					color: var(--primary-color);
+					padding: 5px 7px;
+				}
+
+				li:hover {
+					text-shadow: 1px 1px 0px #131750;
+				}
+			}
+		}
+	}
+
+	div.button-top-nav {
+		display: flex;
+		gap: 5px;
+		align-items: center;
+		padding: 0 10px;
+
+		button.signup {
+			display: none;
+			@media screen and (min-width: 768px) {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+		}
+		button.login {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+}
+
+.button-svg {
+	width: 0.625rem;
+	height: 0.625rem;
+	margin-left: 0.625rem;
+	display: none;
+	@media screen and (min-width: 768px) {
+		display: block;
+	}
+}
+#signup,
+#login,
+#signupFooter {
+	position: absolute;
+	top: 5rem;
+	z-index: 10px;
+	padding: 0 0.625rem;
+	display: none;
+	background-color: var(--text-color-200);
+	transition: all 500ms linear;
+	border-radius: 10px;
+	width: 150px;
+	right: 10px;
+	@media screen and (min-width: 768px) {
+		width: fit-content;
+		right: auto;
+	}
+
+	ul li {
+		margin: 0.85rem 0 !important;
+		padding: 0.5rem !important;
+		border-radius: 5px;
+
+		&:hover {
+			background-color: #fff;
+		}
+	}
+}
+
+.open {
+	display: block !important;
+}

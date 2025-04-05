@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="./styles/default.css" />
+		<link rel="stylesheet" href="./styles/navbar.css" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="./styles/footer.css" />
+		<!-- Google Tag Manager -->
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, 'script', 'dataLayer', 'GTM-P553LSDS');
+		</script>
+		<!-- End Google Tag Manager -->
+		<title>Welcome to Veriphye.com</title>
+	</head>
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-P553LSDS"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"
+			></iframe
+		></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
+		<!-- Navbar -->
+		<header>
+			<i onclick="toggleNav()">
+				<img src="./images/menu.svg" width="20" height="24" />
+			</i>
+			<h1>
+				<img
+					src="./images/logo.png"
+					alt="navbar logo"
+					srcset=""
+					role="img"
+				/>
+			</h1>
+			<nav id="nav">
+				<div class="sidebar-top">
+					<h1 class="sidebar-top-img">
+						<img
+							src="./images/logo.png"
+							alt="navbar logo"
+							width="100"
+							srcset=""
+							role="img"
+						/>
+					</h1>
+					<i class="sidebar-top-close" onclick="toggleNav()">
+						<img src="./images/close.svg" width="20" height="20" />
+					</i>
+				</div>
+				<ul>
+					<a href="index.html" onclick="toggleNav()">
+						<li class="active-nav">Home</li>
+					</a>
+					<a href="#features" onclick="toggleNav()">
+						<li>Features</li>
+					</a>
+					<a href="#how-it-works" onclick="toggleNav()">
+						<li>How it works</li>
+					</a>
+					<a href="pages/pricing.html" onclick="toggleNav()">
+						<li>Pricing</li>
+					</a>
+
+					<a href="#testimonies" onclick="toggleNav()">
+						<li>Testimonies</li>
+					</a>
+				</ul>
+			</nav>
+			<div class="button-top-nav">
+				<li>
+					<button
+						class="signup"
+						id="dropdownNavbarLink"
+						data-dropdown-toggle="dropdownNavbar"
+						onmouseover="openSignupdropdown()"
+					>
+						Sign Up
+
+						<svg
+							class="button-svg"
+							aria-hidden="true"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 10 6"
+						>
+							<path
+								stroke="currentColor"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="m1 1 4 4 4-4"
+							/>
+						</svg>
+					</button>
+					<div id="signup" onmouseleave="openSignupdropdown()">
+						<ul aria-labelledby="dropdownLargeButton">
+							<a href="https://merchant.veriphye.com/signup"
+								><li>As Merchant</li>
+							</a>
+							<a href="https://user.veriphye.com/signup"
+								><li>As User</li>
+							</a>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<button
+						class="login"
+						id="dropdownNavbarLink"
+						data-dropdown-toggle="dropdownNavbar"
+						onmouseover="openLogindropdown()"
+					>
+						Login
+
+						<svg
+							class="button-svg"
+							aria-hidden="true"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 10 6"
+						>
+							<path
+								stroke="currentColor"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="m1 1 4 4 4-4"
+							/>
+						</svg>
+					</button>
+					<div id="login" onmouseleave="openLogindropdown()">
+						<ul aria-labelledby="dropdownLargeButton">
+							<a href="https://merchant.veriphye.com"
+								><li>As Merchant</li>
+							</a>
+							<a href="https://user.veriphye.com"
+								><li>As User</li>
+							</a>
+						</ul>
+					</div>
+				</li>
+			</div>
+		</header>
+
+		<!-- body -->
+		<main class="index">
+			<section class="heading-section">
+				<div class="bg-image">
+					<div class="header-content">
+						<h1 class="headerText">
+							Secure Your Devices, Ensure Authenticity, Buy with
+							Confidence!!!
+						</h1>
+						<h4>
+							Your one-stop solution to prevent theft and ensure
+							safe trade of devices.
+						</h4>
+						<div class="button-cont">
+							<a href="https://auth.veriphye.com/signup">
+								<button>Sign Up for Free</button>
+							</a>
+							<a href="pages/faq.html">
+								<button>Learn More</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="body-cont">
+				<section class="grid-section">
+					<div class="section-content-cont">
+						<div class="section-content">
+							<h1>Your Peace of Mind, Our Priority</h1>
+							<ul>
+								<li>
+									⦁ <span>Prevent Theft:</span> Our
+									cutting-edge tracking technology ensures you
+									can locate and secure your devices anytime,
+									anywhere.
+								</li>
+								<li>
+									⦁
+									<span>Verify Authenticity:</span> Safeguard
+									your purchases by verifying if a device is
+									flagged as stolen before buying.
+								</li>
+								<li>
+									⦁ <span>Empower Merchants:</span> Offer a
+									safer shopping experience by certifying your
+									devices as legitimate.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="img-cont">
+						<img
+							src="./images/scan.jpeg"
+							alt=""
+							sizes="100w,200w"
+							srcset=""
+						/>
+					</div>
+				</section>
+				<section class="grid-section mobile-grid-section" id="features">
+					<div class="img-cont">
+						<img
+							src="./images/scan.jpeg"
+							alt=""
+							sizes="100w,200w"
+							srcset=""
+						/>
+					</div>
+					<div class="section-content-cont">
+						<div class="section-content">
+							<h1>Innovative Tools to Safeguard and Simplify</h1>
+							<ul>
+								<li>
+									⦁ <span>Device Verification:</span> Scan a
+									device unique ID to verify its history and
+									ownership.
+								</li>
+								<li>
+									<span>Merchant Dashboard:</span> Merchants
+									can manage their inventory and ensure all
+									items are authenticated.
+								</li>
+								<li>
+									⦁ <span>Stolen Device Alerts:</span> Get
+									notified when a flagged device is nearby or
+									listed for sale.
+								</li>
+								<li>
+									⦁ <span>Real-Time Tracking:</span> Monitor
+									your devices with precise GPS and receive
+									instant notifications.
+								</li>
+								<li>
+									⦁
+									<span>User-Friendly Interface:</span>
+									Navigate through a sleek and intuitive
+									dashboard.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="grid-section" id="how-it-works">
+					<div class="section-content-cont">
+						<div class="section-content">
+							<h1>Simple Steps to a Secure Experience</h1>
+							<ul>
+								<li>
+									⦁ <span>Register Your Device:</span> Add
+									your devices to the app with their unique
+									serial numbers.
+								</li>
+								<li>
+									⦁ <span>Track in Real-Time:</span> Access
+									the live location and receive alerts if the
+									device moves unexpectedly.
+								</li>
+								<li>
+									⦁ <span>Verify Before Buying:</span> Use the
+									verification tool to ensure a device is not
+									flagged as stolen.
+								</li>
+								<li>
+									⦁ <span>Report Theft:</span> Instantly
+									report a stolen device and help the
+									community stay safe.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="img-cont">
+						<img
+							src="./images/scan.jpeg"
+							alt=""
+							sizes="100w,200w"
+							srcset=""
+						/>
+					</div>
+				</section>
+			</div>
+		</main>
+
+		<!-- footer -->
+		<footer>
+			<div id="testimonies"></div>
+			<div class="cta-action">
+				<div class="cta-content">
+					<h1>Start Protecting Your Devices Today!!!</h1>
+					<h4>
+						You cannot afford to wait until it is too late. Secure
+						your devices and enjoy peace of mind.
+					</h4>
+					<div class="button-dropdown">
+						<button
+							id="dropdownNavbarLink"
+							data-dropdown-toggle="dropdownNavbar"
+							onmouseover="openSignupFooterdropdown()"
+						>
+							Sign Up
+
+							<svg
+								class="button-svg"
+								aria-hidden="true"
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 10 6"
+							>
+								<path
+									stroke="currentColor"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="m1 1 4 4 4-4"
+								/>
+							</svg>
+						</button>
+						<div
+							id="signupFooter"
+							onmouseleave="openSignupFooterdropdown()"
+						>
+							<ul aria-labelledby="dropdownLargeButton">
+								<a href="https://merchant.veriphye.com/signup"
+									><li>As Merchant</li>
+								</a>
+								<a href="https://user.veriphye.com/signup"
+									><li>As User</li>
+								</a>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-nav-list">
+				<div class="footer-nav-list-cont">
+					<div class="footer-grid">
+						<div class="location">
+							<div>
+								<img
+									src="./images/footerLogo.svg"
+									alt="footer"
+									sizes="100w, 200w"
+									role="img"
+								/>
+							</div>
+							<div>
+								<p class="contact-p">Contact Address</p>
+
+								<div class="social-flex">
+									<img
+										src="./images/globe.svg"
+										alt=""
+										width="30"
+										height="30"
+									/>
+									<p>Ibadan, Nigeria</p>
+								</div>
+								<div class="social-flex">
+									<img
+										src="./images/mail.svg"
+										alt=""
+										width="30"
+										height="30"
+									/>
+									<p>
+										<a
+											rel="noopener noreferrer"
+											target="_blank"
+											href="mailto:reachus@veriphye.com"
+										>
+											reachus&#64;veriphye.com
+										</a>
+									</p>
+								</div>
+							</div>
+							<p class="social-p">Social Network</p>
+							<div class="social-grid">
+								<a
+									rel="noopener noreferrer"
+									target="blank"
+									href="https://x.com/veriphye"
+								>
+									<img
+										src="./images/twitter.svg"
+										alt=""
+										width="30"
+										height="30"
+									/>
+								</a>
+								<a
+									rel="noopener noreferrer"
+									target="blank"
+									href="https://facebook.com/veriphye"
+								>
+									<img
+										src="./images/facebook.svg"
+										alt=""
+										width="30"
+										height="30"
+									/>
+								</a>
+								<a
+									rel="noopener noreferrer"
+									target="blank"
+									href="https://instagram.com/veriphye"
+								>
+									<img
+										src="./images/instagram.svg"
+										alt=""
+										width="30"
+										height="30"
+									/>
+								</a>
+
+								<a
+									rel="noopener noreferrer"
+									target="blank"
+									href="https://youtube.com/veriphye"
+								>
+									<img
+										src="./images/youtube.svg"
+										alt=""
+										width="30"
+										height="30"
+									/>
+								</a>
+
+								<a
+									rel="noopener noreferrer"
+									target="blank"
+									href="https://wa.me/+2349063601878"
+								>
+									<img
+										src="./images/whatsapp.svg"
+										alt=""
+										width="30"
+										height="30"
+									/>
+								</a>
+							</div>
+						</div>
+						<div class="footer-sub-grid">
+							<div>
+								<ul>
+									<li>GET TO KNOW US</li>
+									<li>
+										<a href="http://">About Us</a>
+									</li>
+									<li>
+										<a href="http://">Contact Us</a>
+									</li>
+								</ul>
+							</div>
+							<div>
+								<ul>
+									<li>PROGRAMS</li>
+									<li>Prevent Theft</li>
+									<li>Verify Authenticity</li>
+									<li>Real-Time Tracking</li>
+									<li>Empower Merchant</li>
+								</ul>
+							</div>
+							<div>
+								<ul>
+									<li>DOCS</li>
+									<li>
+										<a href="pages/faq.html">FAQs</a>
+									</li>
+									<li>
+										<a
+											href="pages/terms-and-conditions.html"
+											>Terms and Conditions</a
+										>
+									</li>
+									<li>
+										<a href="pages/privacy-policy.html"
+											>Privacy Policies</a
+										>
+									</li>
+								</ul>
+							</div>
+							<div>
+								<ul>
+									<li>QUICK LINKS</li>
+									<li>
+										<a
+											href="https://auth.veriphye.com/signup"
+											>Sign Up</a
+										>
+									</li>
+									<li>
+										<a
+											href="https://auth.veriphye.com/login"
+											>Login</a
+										>
+									</li>
+									<li>
+										<a href="#features">Features</a>
+									</li>
+									<li>
+										<a href="#how-it-works">How It Works</a>
+									</li>
+									<li>
+										<a href="http://">Pricing</a>
+									</li>
+									<li>
+										<a href="http://">Testimonies</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					Copyright &#64;<span id="addDate"></span> T3 - Technologies.
+					All Rights Reserved.
+				</div>
+			</div>
+		</footer>
+	</body>
+
+	<script src="./scripts/navbar.js"></script>
+</html>
